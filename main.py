@@ -12,14 +12,10 @@ predictor = dlib.shape_predictor('../data/data_dlib/shape_predictor_68_face_land
 
 # cap = cv2.VideoCapture("rtsp://admin:admin@192.168.0.25:554/11")
 cap = cv2.VideoCapture(0)
-
-# 视频参数
 cap.set(3, 480)
-
-# 设置摄像头的帧大小
 cap.set(cv2.CAP_PROP_FPS, 90)
 
-# 人脸截图的计数器
+
 cnt_ss = 0
 
 current_face_dir = 0
