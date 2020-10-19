@@ -8,7 +8,7 @@ import numpy as np
 
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('../data/data_dlib/shape_predictor_68_face_landmarks.dat')
+#predictor = dlib.shape_predictor('../data/data_dlib/shape_predictor_68_face_landmarks.dat')
 
 # cap = cv2.VideoCapture("rtsp://admin:admin@192.168.0.25:554/11")
 cap = cv2.VideoCapture(0)
@@ -20,11 +20,16 @@ cnt_ss = 0
 
 current_face_dir = 0
 
+#os.makedirs("/data/face_from_camera/")
 path_make_dir = "../data/faces_from_camera/"
 path_csv = "../data/csv_from_camera/"
 
 
 def pre_work():
+    # if os.path.isdir("../data/face_from_carema"):
+    #     pass
+    # else:
+    #     os.mkdir("../data/face_from_camera/")
     # 新建文件夹
     if os.path.isdir(path_make_dir):
         pass
