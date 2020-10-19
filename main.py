@@ -8,7 +8,7 @@ import numpy as np
 
 
 detector = dlib.get_frontal_face_detector()
-#predictor = dlib.shape_predictor('../data/data_dlib/shape_predictor_68_face_landmarks.dat')
+# predictor = dlib.shape_predictor('../data/data_dlib/face_landmark_model.dat')
 
 # cap = cv2.VideoCapture("rtsp://admin:admin@192.168.0.25:554/11")
 cap = cv2.VideoCapture(0)
